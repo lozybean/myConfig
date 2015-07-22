@@ -15,6 +15,7 @@ alias ll="ls -l";
 alias les="less -S";
 
 alias pipinstall="pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com";
+alias cpanm="cpanm --mirror http://mirrors.163.com/cpan --mirror-only"
 
 alias login0="ssh liangzb@183.247.166.83 -p 9100";
 
