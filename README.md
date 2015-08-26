@@ -17,3 +17,22 @@ some config of bash and other soft
 	3. set as .bashrc
 	4. plenv install-cpanm
 
+	5. use source of neteasy : cpanm --mirror http://mirrors.163.com/cpan --mirror-only
+
+3. rbenv install:
+	
+	1. git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+	2. git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build/
+	3. set as .bashrc
+	4. git clone git://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+	5. git clone https://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
+	
+
+3. R install:
+	
+	wget -c http://mirror.bjtu.edu.cn/cran/src/base/R-3/R-3.1.3.tar.gz
+	tar zxvf R-3.1.3.tar.gz
+	cd R-3.1.3
+	./configure --prefix=./  --with-blas --with-lapack --enable-R-shlib --enable-BLAS-shlib
+	make
+	make install

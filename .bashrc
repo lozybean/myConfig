@@ -19,13 +19,19 @@ alias cpanm="cpanm --mirror http://mirrors.163.com/cpan --mirror-only"
 
 alias login0="ssh liangzb@183.247.166.83 -p 9100";
 
+# set pyenv
 export PYENV_ROOT="$HOME/.pyenv"
-export PLENV_ROOT="$HOME/.plenv"
-export RVM_ROOT="$HOME/.rvm"
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)"
 
-export PATH=$RVM_ROOT/bin:$PYENV_ROOT/bin:$PLENV_ROOT/bin:$PATH
+# set plenv
+export PLENV_ROOT="$HOME/.plenv"
+export PATH=$PLENV_ROOT/bin:$PATH
+eval "$(plenv init -)"
+
+# set rbenv
+export RBENV_ROOT="$HOME/.rbenv"
+export PATH=$RBENV_ROOT/bin:$PATH
+eval "$(rbenv init -)"
 
 export LD_LIBRARY_PATH="/usr/local/include:$LD_LIBRARY_PATH"
-
-eval "$(pyenv init -)"
-eval "$(plenv init -)"
